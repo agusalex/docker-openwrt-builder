@@ -19,4 +19,5 @@ ENV TERM=xterm
 RUN git config --global user.name "user" && git config --global user.email "user@example.com"
 RUN git clone https://github.com/agusalex/openwrt-aircube-isp && cd openwrt-aircube-isp && git checkout openwrt-19.07 && \
 ./scripts/feeds update -a && ./scripts/feeds install -a
+COPY .config openwrt-aircube-isp/.
 RUN make

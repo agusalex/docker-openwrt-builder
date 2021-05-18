@@ -7,5 +7,6 @@ python2-dev python3-dev rsync tar unzip util-linux wget zlib-dev
 
 # set dummy git config
 RUN git config --global user.name "user" && git config --global user.email "user@example.com"
-RUN git clone https://git.openwrt.org/openwrt/openwrt.git && cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a && make -j4;
+RUN git clone https://git.openwrt.org/openwrt/openwrt.git && cd openwrt && git checkout openwrt-21.02 && \
+./scripts/feeds update -a && ./scripts/feeds install -a && make -j4;
 

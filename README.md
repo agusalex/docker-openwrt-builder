@@ -1,15 +1,9 @@
 # Docker OpenWrt Builder
 
-Build [OpenWrt](https://openwrt.org/) images in a Docker container. This is sometimes necessary when building OpenWrt on the host system fails, e.g. when some dependency is too new. The docker image is based on Debian 10 (Buster).
-
+Build [OpenWrt](https://openwrt.org/) images in a Docker container. 
 Build tested:
 
-- OpenWrt-21.02 (e4d061cd)
-- OpenWrt-19.07.7
-- OpenWrt-18.06.9
-- LEDE-17.01.7
-
-A smaller container based on Alpine Linux is available in the alpine branch. But it does not build the old LEDE images.
+It does not build the old LEDE images.
 
 ## Prerequisites
 

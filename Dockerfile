@@ -16,3 +16,5 @@ WORKDIR /home/user
 
 # set dummy git config
 RUN git config --global user.name "user" && git config --global user.email "user@example.com"
+RUN git clone https://git.openwrt.org/openwrt/openwrt.git && cd openwrt && ./scripts/feeds update -a && ./scripts/feeds install -a && make -j4;
+

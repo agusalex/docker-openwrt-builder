@@ -12,7 +12,7 @@ It does not build the old LEDE images.
 * build Docker image:
 
 ```
-git clone https://github.com/mwarning/docker-openwrt-builder.git
+git clone https://github.com/agusalex/docker-openwrt-builder.git
 cd docker-openwrt-builder
 docker build -t openwrt_builder .
 ```
@@ -29,10 +29,6 @@ docker run -v ~/mybuild:/home/user -it openwrt_builder /bin/bash
 
 In the container console, enter:
 ```
-git clone https://git.openwrt.org/openwrt/openwrt.git
-cd openwrt
-./scripts/feeds update -a
-./scripts/feeds install -a
 make menuconfig
 make -j4
 ```

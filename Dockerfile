@@ -8,4 +8,4 @@ python2-dev python3-dev rsync tar unzip util-linux wget zlib-dev
 # set dummy git config
 RUN git config --global user.name "user" && git config --global user.email "user@example.com"
 RUN git clone https://github.com/agusalex/openwrt-aircube-isp && cd openwrt-aircube-isp && git checkout openwrt-19.07 && \
-./scripts/feeds update -a && ./scripts/feeds install -a
+./scripts/feeds update -a && ./scripts/feeds install -a && make

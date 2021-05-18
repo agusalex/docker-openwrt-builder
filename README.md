@@ -24,7 +24,7 @@ Now the docker image is available. These steps only need to be done once.
 Create a build folder and link it into a new docker container:
 ```
 mkdir ~/mybuild
-docker run -v ~/mybuild:/home/user -it openwrt_builder /bin/bash
+docker run -v ~/mybuild:/openwrt -it agusalex/docker-openwrt-builder /bin/bash
 ```
 
 In the container console, enter:
@@ -33,7 +33,7 @@ make menuconfig
 make -j4
 ```
 
-After the build, the images will be inside `~/mybuild/openwrt/bin/target/`.
+After the build, the images will be inside `~/mybuild/bin/target/`.
 
 ## Usage MacOSX
 

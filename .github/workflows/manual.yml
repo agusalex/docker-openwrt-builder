@@ -12,4 +12,4 @@ jobs:
         name: agusalex/docker-openwrt-builder
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-        tags: "aircube-ISP-19.07"
+        tags: "latest"
